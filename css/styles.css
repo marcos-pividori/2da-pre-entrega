@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 24px;
+}
+
+h1{
+color:rgb(209, 47, 47);
+}
+
+h1 span{
+    color: rgb(10, 10, 172);
+}
+
+header{
+    background-color: burlywood;
+    border: solid 3px black;
+    position: sticky;
+    top: 0px;
+}
+
+
+section{
+    background-color:rgb(147, 178, 235)
+}
+
+
+.color-rojo{
+    color: rgb(209, 47, 47);
+}
+
+
+
+h2{
+    font-size: 1,5rem;
+    font-family: playfair display, serif;
+    font-weight: 500;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
+
+.caja1{
+    margin-left: 20px;
+}
+
+.caja{
+    margin-left: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    color: aliceblue;
+    background-color: black;
+}
