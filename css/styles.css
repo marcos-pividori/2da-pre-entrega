@@ -66,6 +66,7 @@ header{
 
 }
 
+
 /* nav{
     width: 50%;
 } */
@@ -109,7 +110,7 @@ ul{
 }
 
 section{
-    background-color:rgb(163, 184, 223)
+    background-color:rgb(109, 148, 221)
     
 }
 
@@ -133,7 +134,7 @@ h2{
 .contenedor{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items:center;
     /* grid-template-columns: repeat(2); */
     /* grid-template-rows: repeat(2,40vw); */
@@ -201,7 +202,7 @@ ul{
 }
 
 @media (min-width:768px){
-    .contenedor-redes{
+    .main-index .contenedor-redes{
         height: 100%;
         align-items: center;
         flex-direction: column;
