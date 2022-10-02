@@ -1,0 +1,29 @@
+section{
+    background-color:rgb(109, 148, 221)
+    
+}
+
+.productos{
+    grid-area: productos;
+   
+}
+
+.color-rojo{
+    color: rgb(209, 47, 47);
+}
+
+
+
+h2{
+    font-size: 1,5rem;
+    font-family: playfair display, serif;
+    font-weight: 500;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+    
+    }

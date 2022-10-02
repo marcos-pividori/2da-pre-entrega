@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 24px;
+}
+
+
+
+h1{
+color:rgb(209, 47, 47);
+}
+
+h1 span{
+    color: rgb(10, 10, 172);
+}
+
+header{
+    background-color: burlywood;
+    border: solid 3px black;
+    top:0px;
+    padding: 15px;
+    
+
+}
+
+.header__title{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width:768px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav{width: 50%;}
+}
+
+@media(min-width:768px){
+.main-index{
+    display: grid;
+    width: 100vw;
+    grid-template-columns:80% 20%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "hero hero"
+    "productos redes"
+    "ubicacion redes";
+}
+
+}
+
+/*barra nav */
+
+.nav ul{
+  
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+.caja{
+    margin-left: 50px;
+}
+
+
+/* hero section */
+
+.hero{
+    height: 98vh;
+    width: 100%;
+    background-image: url(../assets/comics.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: hero;
+}
+
+.hero__text{
+   text-align: center;
+   color: white;
+   background-color:rgba(0, 0, 0, 0.459);
+   padding: 30px;
+   
+}
+
+.hero__text h2{
+    font-size: 1.15rem;
+}
+
+/* productos */
+
+section{
+    background-color:rgb(109, 148, 221)
+    
+}
+
+.productos{
+    grid-area: productos;
+   
+}
+
+.color-rojo{
+    color: rgb(209, 47, 47);
+}
+
+
+
+h2{
+    font-size: 1,5rem;
+    font-family: playfair display, serif;
+    font-weight: 500;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+    
+    }
+
+ /* imagenes */
+
+img{
+    width: 200px;
+    height: 300px;
+}
+
+.tarjeta__boton{
+    background-color: burlywood;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.tarjeta__boton:hover{
+    border: burlywood 2px solid;
+    background-color: brown;
+    color: burlywood;
+}
+
+
+
+
+/* ubicacion */
+
+.ubicacion{
+    grid-area: ubicacion;
+}
+
+.ubicacion__title{
+    background-color: rgb(194, 78, 78);
+    text-align: center;
+    padding: 14px;
+}
+
+.ubicacion__mapa{
+    width: 100%;
+}
+
+/* redes */
+
+.redes{
+    grid-area: redes;
+    background-color: burlywood;
+}
+
+.redes__title{
+    background-color: burlywood;
+    text-align: center;
+    padding: 14px;
+}
+
+.contenedor-redes{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1,7rem;
+}
+
+@media (min-width:768px){
+    .main-index .contenedor-redes{
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+}
+
+
+footer{
+    color: aliceblue;
+    background-color: black;
+    padding: 20px;
+    }

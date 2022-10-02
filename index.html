@@ -14,7 +14,11 @@
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <meta name="description" content="Todo tipo de comics y revistas a un click de distancia">
+
     <title>M Comix</title>
+
 </head>
 
 <body>
@@ -24,11 +28,11 @@
         <h1 class="header__title"><span> M</span> COMIC<span>X</span> </h1>
 
         <nav class="nav">
-            <ul>
-                <li>Inicio </li>
+            <ul class="horizontal">
+                <li>Inicio</li>
                 <li><a href="./pages/comics.html">Comics</a></li>
                 <li><a href="./pages/mangas.html">Mangas</a></li>
-                <li><a href="./pages/merchandising.html">Merchandising</a></li>
+                <li><a href="./pages/merchandising.html">Merch</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -57,7 +61,7 @@
 
                         <h3 class="tarjeta__titulo tarjeta__titulo--oferta">The Sandman</h3>
 
-                        <img src="./assets/the-sandman.jpg" alt="Ultimo lanzamiento de Sandman" class="tarjeta__img">
+                        <img src="./assets/the-sandman.jpg" alt="Ultimo lanzamiento de Sandman" loading="lazy" class="tarjeta__img">
 
                         <p class="tarjeta__texto">Ultimo lanzamiento!</p>
 
@@ -71,7 +75,7 @@
 
                         <h3>Demon Slayer</h3>
 
-                        <img src="./assets/demon-slayer.jpg" alt="Primer número de Demon Slayer">
+                        <img src="./assets/demon-slayer.jpg" alt="Primer número de Demon Slayer" loading="lazy" class="tarjeta__img">
 
                         <p>1er número!</p>
 
@@ -81,16 +85,60 @@
 
                     </article>
 
-                    <article>
+                    <article class="tarjeta">
 
-                        <h3>Superman</h3>
+                        <h3 class="tarjeta__titulo tarjeta__titulo--oferta">Wolverine</h3>
 
-                        <img src="./assets/crisis-infinita-superman.jpg" alt="superman $150">
+                        <img src="../assets/wolverine-merch.jpg" alt="figura de accion de wolverine a 150 pesos" loading="lazy" class="tarjeta__img">
 
-                        <p>$150</p>
+                        
+
+                        <div>50% Off</div>
 
                         <button href="" class="tarjeta__boton">Comprar</button>
 
+
+                    </article>
+
+                    <article class="tarjeta">
+
+                        <h3 class="tarjeta__titulo tarjeta__titulo--oferta">The Sandman</h3>
+
+                        <img src="./assets/the-sandman.jpg" alt="Ultimo lanzamiento de Sandman" loading="lazy" class="tarjeta__img">
+
+                        <p class="tarjeta__texto">Ultimo lanzamiento!</p>
+
+                        <button href="" class="tarjeta__boton">Comprar</button>
+
+
+
+                    </article>
+
+                    <article>
+
+                        <h3>Demon Slayer</h3>
+
+                        <img src="./assets/demon-slayer.jpg" alt="Primer número de Demon Slayer" loading="lazy" class="tarjeta__img" >
+
+                        <p>1er número!</p>
+
+                        <button href="" class="tarjeta__boton">Comprar</button>
+
+
+
+                    </article>
+
+                    <article class="tarjeta">
+
+                        <h3 class="tarjeta__titulo tarjeta__titulo--oferta">Wolverine</h3>
+
+                        <img src="../assets/wolverine-merch.jpg" alt="figura de accion de wolverine a 150 pesos" loading="lazy" class="tarjeta__img">
+
+                        
+
+                        <div>50% Off</div>
+
+                        <button href="" class="tarjeta__boton">Comprar</button>
 
 
                     </article>
@@ -104,7 +152,7 @@
 
             <h2 class="ubicacion__title">¿Donde nos encontramos?</h2>
                
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27885.601720759656!2d-59.66088645!3d-29.114530599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eb09dd8f4806b%3A0x7b64eeba359aceca!2sAvellaneda%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1663432848634!5m2!1ses-419!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion__mapa"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27885.601720759656!2d-59.66088645!3d-29.114530599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eb09dd8f4806b%3A0x7b64eeba359aceca!2sAvellaneda%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1663432848634!5m2!1ses-419!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion__mapa" loading="lazy"></iframe>
         </section>
 
         <section class="redes">
@@ -122,6 +170,9 @@
     </main>
 
     <footer>
+        <div>
+            <h4>Seguinos en nuestras redes sociales</h4>
+        </div>
        
         <div>
             <ul>

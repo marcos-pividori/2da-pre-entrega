@@ -1,0 +1,14 @@
+.tarjeta__boton{
+    background-color: $color-primario;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 500ms;
+    &:hover{
+    border: $color-primario 2px solid;
+    background-color: brown;
+    color: $color-primario;
+    }
+}
+
+

@@ -1,0 +1,78 @@
+@media(min-width:768px){
+    .main-index{
+        display: grid;
+        width: 100vw;
+        grid-template-columns:80% 20%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "hero hero"
+        "productos redes"
+        "ubicacion redes";
+    }
+    
+    }
+
+    .hero{
+        height: 98vh;
+        width: 100%;
+        background-image: url(../assets/comics.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: hero;
+        &__text{
+            text-align: center;
+            color: white;
+            background-color:rgba(0, 0, 0, 0.459);
+            padding: 30px;
+        }
+        &__text h2{
+            font-size: 1.15rem;
+        }
+    }
+    
+
+
+    .redes{
+        grid-area: redes;
+        background-color: $color-primario;
+        &__title{
+         background-color: $color-primario;
+         text-align: center;
+         padding: 14px;
+        }
+    }
+ 
+    
+    .contenedor-redes{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1,7rem;
+    }
+    
+    @media (min-width:768px){
+        .main-index .contenedor-redes{
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2rem;
+        }
+    }
+
+    .ubicacion{
+        grid-area: ubicacion;
+        &__title{
+            background-color: rgb(194, 78, 78);
+            text-align: center;
+            padding: 14px;
+        }
+        &__mapa{
+            width: 100%;
+        }
+    }
+    
+  
