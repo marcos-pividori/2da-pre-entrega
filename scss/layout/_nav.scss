@@ -2,15 +2,22 @@
   
     display: flex;
     justify-content: space-around;
-
-    ul{display: flex;
-        justify-content: space-around;
-        list-style: none;
-    }
-
+    ul{list-style: none;}
+  
 
 }
 
+ .vertical {
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 100px;
+    flex-direction: column;
+    background-color: $color-primario;
+    & li :hover {display: block;
+        flex-direction: column;
+    background-color: bisque;}
+}
 
 
 .caja{

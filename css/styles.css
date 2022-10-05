@@ -49,9 +49,21 @@ h1 span {
   justify-content: space-around;
 }
 .nav ul ul {
-  display: flex;
-  justify-content: space-around;
   list-style: none;
+}
+
+.vertical {
+  list-style: none;
+  position: absolute;
+  display: none;
+  width: 100px;
+  flex-direction: column;
+  background-color: burlywood;
+}
+.vertical li :hover {
+  display: block;
+  flex-direction: column;
+  background-color: bisque;
 }
 
 .caja {
@@ -126,10 +138,10 @@ h1 span {
   width: 100%;
 }
 
-.formulario {
+.form {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  align-items: center;
 }
 
 input:focus {
@@ -152,37 +164,6 @@ img {
   border: burlywood 2px solid;
   background-color: brown;
   color: burlywood;
-}
-
-footer {
-  color: aliceblue;
-  background-color: black;
-  padding: 20px;
-}
-
-section {
-  background-color: rgb(109, 148, 221);
-}
-
-.productos {
-  grid-area: productos;
-}
-
-.color-rojo {
-  color: rgb(209, 47, 47);
-}
-
-h2 {
-  font-size: 1, 5rem;
-  font-family: playfair display, serif;
-  font-weight: 500;
-}
-
-.contenedor {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .redes {
@@ -209,6 +190,40 @@ h2 {
     flex-direction: column;
     font-size: 2rem;
   }
+}
+section {
+  background-color: rgb(109, 148, 221);
+}
+
+.tarjeta__texto {
+  background-color: rgb(209, 47, 47);
+}
+
+.productos {
+  grid-area: productos;
+}
+
+.color-rojo {
+  color: rgb(209, 47, 47);
+}
+
+h2 {
+  font-size: 1, 5rem;
+  font-family: playfair display, serif;
+  font-weight: 500;
+}
+
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  color: aliceblue;
+  background-color: black;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

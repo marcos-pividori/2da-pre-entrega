@@ -3,13 +3,18 @@ section{
     
 }
 
+.tarjeta__texto{
+    background-color: $color-secundario;
+    
+}
+
 .productos{
     grid-area: productos;
    
 }
 
 .color-rojo{
-    color: rgb(209, 47, 47);
+    color: $color-secundario;
 }
 
 
@@ -18,6 +23,7 @@ h2{
     font-size: 1,5rem;
     font-family: playfair display, serif;
     font-weight: 500;
+  
 }
 
 .contenedor{
