@@ -52,7 +52,7 @@ h1 span {
   list-style: none;
 }
 
-.vertical {
+.horizontal .vertical {
   list-style: none;
   position: absolute;
   display: none;
@@ -60,10 +60,12 @@ h1 span {
   flex-direction: column;
   background-color: burlywood;
 }
-.vertical li :hover {
-  display: block;
-  flex-direction: column;
+.horizontal .vertical li :hover {
   background-color: bisque;
+}
+
+.horizontal li:hover .vertical {
+  display: block;
 }
 
 .caja {
@@ -73,7 +75,6 @@ h1 span {
 @media (min-width: 768px) {
   .main-index {
     display: grid;
-    width: 100vw;
     grid-template-columns: 80% 20%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "hero hero" "productos redes" "ubicacion redes";
@@ -222,7 +223,7 @@ h2 {
 
 footer {
   color: aliceblue;
-  background-color: black;
+  background-color: rgb(117, 109, 109);
   padding: 20px;
 }
 

@@ -7,18 +7,19 @@
 
 }
 
- .vertical {
+.horizontal .vertical {
     list-style: none;
     position: absolute;
     display: none;
     width: 100px;
     flex-direction: column;
     background-color: $color-primario;
-    & li :hover {display: block;
-        flex-direction: column;
-    background-color: bisque;}
+    & li :hover {background-color: bisque;}
 }
 
+.horizontal li:hover .vertical{display: block;
+   
+}
 
 .caja{
     margin-left: 50px;

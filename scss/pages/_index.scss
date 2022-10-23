@@ -1,7 +1,6 @@
 @media(min-width:768px){
     .main-index{
         display: grid;
-        width: 100vw;
         grid-template-columns:80% 20%;
         grid-template-rows: repeat(3,auto);
         grid-template-areas: 
